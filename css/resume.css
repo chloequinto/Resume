@@ -1,0 +1,195 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    margin: auto;
+      max-width: 900px;
+
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-weight: 700;
+
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+    margin-top: 20px;
+    margin-bottom: 0.9em;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2em;
+    margin-top: 0.9em;
+}
+
+@media all {
+    .page-break { display: none; }
+}
+
+@media print {
+    .page-break { display: block; page-break-before: always; }
+    .content {
+        width: 100% !important;
+    }
+
+    .bar {
+        background-color: white !important;
+        opacity: 1 !important;
+        border: 1px solid black;
+    }
+
+    #present {
+        display: none;
+    }
+
+    #timeline {
+        overflow: none !important;
+    }
+}
+
+.label-hover {
+    background-color: red !important;
+}
+
+#other h3 {
+    text-indent: -0.35em;
+    padding-left: 0.35em;
+}
+
+
+
+/* unvisited link */
+a:link {
+    color: green;
+    text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: grey;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: green;
+    text-decoration: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+/**    color: red; **/
+    background: yellow;
+}
+
+::selection {
+    /**color: red;**/
+    background: yellow;
+}
+
+#present {
+    height: 100%;
+    position: absolute;
+    opacity: .3;
+    z-index: -1;
+    border-left: 1px dotted black;
+    top: 0px;
+    width: 10px;
+}
+
+.bar:hover {
+    cursor: pointer;
+}
+
+.foo b:hover, .foo span:hover {
+    cursor: pointer;
+}
+
+.foo {
+    white-space: nowrap;
+}
+
+.glyphicon {
+    padding: 0 .35em;
+}
+
+
+.job {
+    background-color: #69c
+}
+
+.education {
+    background-color: #036
+}
+
+.column {
+
+    float: left;
+    width: 31%;
+    padding: 10px;
+    column-gap:50px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+
+    content: "";
+    display: table;
+    clear: both;
+
+
+}
+/*
+ *  Body
+ */
+
+ @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.glyphicon {
+    padding: 0 .35em;
+}
+
+ul { list-style-type: none; }
+
+li:before {
+    font-family: 'Glyphicons Halflings';;
+    content: '\e080';
+    margin: 0 5px 0 -30px;
+    color: green;
+}
+
+
+.description {
+    padding-left: 5em;
+}
+
+a.top {
+    position: relative;
+    top:-50px;
+    display: block;
+    height: 0;
+    width:0;
+}
+
+
+footer {
+    margin-top: 25px;
+    color: #555;
+    font-size: 0.8em;
+}
